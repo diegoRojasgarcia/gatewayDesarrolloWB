@@ -11,12 +11,9 @@ import { GraphQLModule } from '@nestjs/graphql';
           subgraphs: [
             { name: 'auth', url: 'http://localhost:3000/graphql' },
             { name: 'equipos', url: 'http://localhost:3001/graphql' },
+            { name: 'proyectos', url: 'http://localhost:3002/graphql' },
+            { name: 'tareas', url: 'http://localhost:3003/graphql' },
           ],
-
-          // introspectionHeaders: {
-          //   Authorization:
-          //     'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjk3MTc5NDgyLCJleHAiOjE2OTcxODY2ODJ9.KqhmsCtgzvPI8yIHWyzp3MGPlwCShmGQkikpB6oPylw',
-          // },
         }),
       },
     }),
